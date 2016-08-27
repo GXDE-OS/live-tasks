@@ -1,0 +1,372 @@
+Source: live-tasks
+Maintainer: Ana Custura <ana@netstat.org.uk>
+Uploaders: Iain R. Learmonth <irl@debian.org>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Vcs-Browser: http://anonscm.debian.org/cgit/vmdebootstrap/live-tasks.git
+Vcs-Git: http://anonscm.debian.org/git/vmdebootstrap/live-tasks.git
+
+Package: live-base
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-boot,
+         live-config,	 
+	 libnss-myhostname
+Recommends: live-recommended
+Suggests: live-extra	
+Description: Live environment support
+ This metapackage installs packages and documentation to help support Debian
+ live environments.
+
+Package: live-recommended
+Architecture: all
+Depends: ${misc:Depends},
+	 task-laptop,
+         task-english,
+Recommends: less,
+	 bash-auto-completion,
+	 dkms,
+	 time,
+ 	 firmware-linux-free,
+ 	 hostname,
+	 inetutils-ping,
+ 	 netutils,
+	 findutils,
+	 file,
+	 dbus,
+	 openssh-client,
+	 lsof,
+	 sed,
+	 doc-debian
+Description: Live environment support
+ This metapackage installs packages and documentation to help support Debian
+ live environments.
+
+Package: live-extra
+Architecture: all
+Depends: ${misc:Depends},
+Recommends: man-db,
+	 dnsutils,
+	 whois,
+	 telnet,
+	 w3m,
+	 reportbug,
+ 	 debian-faq,
+	 screen,
+ 	 inetutils-ftp,
+	 vim,
+	 htop
+Description: Live environment support
+ This metapackage installs packages and documentation to help support Debian
+ live environments.
+
+Package: live-localisation
+Architecture: all
+Depends: ${misc:Depends}
+Recommends:task-amharic,
+	 task-arabic,
+	 task-asturian,
+	 task-basque,
+	 task-belarusian,
+	 task-bengali,
+	 task-bosnian,
+	 task-brazilian-portuguese,
+	 task-bulgarian,
+	 task-catalan,
+ 	 task-chinese-s,
+	 task-chinese-t,
+ 	 task-croatian,
+	 task-czech,
+	 task-danish,
+	 task-dutch,
+	 task-english,
+	 task-esperanto,
+	 task-estonian,
+	 task-finnish,
+	 task-french,
+	 task-galician,
+	 task-german,
+ 	 task-greek,
+	 task-gujarati,
+	 task-hebrew,
+	 task-hindi,
+ 	 task-hungarian,
+	 task-icelandic,
+	 task-irish,
+	 task-italian,
+	 task-japanese,
+	 task-kazakh,
+	 task-khmer,
+	 task-korean,
+	 task-kurdish,
+	 task-latvian,
+ 	 task-lithuanian,
+	 task-macedonian,
+	 task-malayalam,
+	 task-marathi,
+	 task-northern-sami,
+	 task-norwegian,
+	 task-persian,
+	 task-polish,
+	 task-portuguese,
+	 task-punjabi,
+	 task-romanian,
+	 task-russian,
+	 task-serbian,
+	 task-slovak,
+	 task-slovenian,
+	 task-spanish,
+	 task-swedish,
+	 task-tagalog,
+	 task-tamil,
+	 task-telugu,
+	 task-thai,
+	 task-turkish,
+	 task-ukrainian,
+	 task-welsh,
+	 task-cyrillic,
+Description: Live environment localisation support
+ This metapackage installs packages and documentation to help support Debian
+ live environments for other languages.
+
+Package: live-localisation-desktop
+Architecture: all
+Depends: ${misc:Depends},
+	live-localisation
+Recommends: task-albanian-desktop,
+	 task-amharic-desktop,
+	 task-arabic-desktop,
+	 task-asturian-desktop,
+         task-basque-desktop,
+	 task-belarusian-desktop,
+ 	 task-bengali-desktop,
+	 task-bosnian-desktop,
+	 task-brazilian-portuguese-desktop,
+ 	 task-british-desktop,
+ 	 task-bulgarian-desktop,
+	 task-catalan-desktop,
+	 task-chinese-s-desktop,
+	 task-chinese-t-desktop,
+	 task-croatian-desktop,
+	 task-czech-desktop,
+	 task-danish-desktop,
+	 task-dutch-desktop,
+	 task-dzongkha-desktop,
+       	 task-esperanto-desktop,
+	 task-estonian-desktop,
+	 task-finnish-desktop,
+	 task-french-desktop,
+	 task-galician-desktop,
+	 task-georgian-desktop,
+ 	 task-german-desktop,
+	 task-greek-desktop,
+ 	 task-gujarati-desktop,
+	 task-hebrew-desktop,
+	 task-hindi-desktop,
+	 task-hungarian-desktop,
+	 task-icelandic-desktop,
+	 task-indonesian-desktop,
+	 task-irish-desktop,
+ 	 task-italian-desktop,
+	 task-japanese-desktop,
+	 task-kannada-desktop,
+	 task-kazakh-desktop,
+	 task-khmer-desktop,
+	 task-korean-desktop,
+	 task-kurdish-desktop,
+	 task-latvian-desktop,
+	 task-lithuanian-desktop,
+	 task-macedonian-desktop,
+ 	 task-malayalam-desktop,
+	 task-marathi-desktop,
+	 task-nepali-desktop,
+	 task-northern-sami-desktop,
+	 task-norwegian-desktop,
+	 task-persian-desktop,
+	 task-polish-desktop,
+ 	 task-portuguese-desktop,
+	 task-punjabi-desktop,
+	 task-romanian-desktop,
+	 task-russian-desktop,
+	 task-serbian-desktop,
+	 task-sinhala-desktop,
+	 task-slovak-desktop, 
+	 task-slovenian-desktop,
+	 task-south-african-english-desktop,
+	 task-spanish-desktop,
+	 task-swedish-desktop,
+	 task-tamil-desktop,
+	 task-telugu-desktop,
+	 task-thai-desktop,
+	 task-turkish-desktop,
+	 task-ukrainian-desktop,
+	 task-uyghur-desktop,
+	 task-vietnamese-desktop,
+	 task-welsh-desktop,
+	 task-xhosa-desktop,
+	 task-cyrillic-desktop
+Description: Live graphical desktop environment localisation support
+ This metapackage installs packages and documentation to help support Debian
+ live graphical desktop environments for other languages.
+
+Package: live-kde
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+	 live-base,
+	 live-recommended,
+	 live-extra,
+	 task-kde-desktop
+Recommends:live-localisation,
+	live-localisation-desktop,
+	task-amharic-kde-desktop,
+	task-arabic-kde-desktop, 
+	task-basque-kde-desktop,
+	task-belarusian-kde-desktop,
+	task-bengali-kde-desktop,
+	task-bosnian-kde-desktop,
+	task-brazilian-portuguese-kde-desktop,
+	task-british-kde-desktop,
+	task-bulgarian-kde-desktop,
+	task-catalan-kde-desktop,
+	task-chinese-s-kde-desktop,
+	task-chinese-t-kde-desktop,
+	task-croatian-kde-desktop,
+	task-czech-kde-desktop,
+	task-danish-kde-desktop,
+	task-dutch-kde-desktop,
+	task-dzongkha-kde-desktop,
+	task-esperanto-kde-desktop,
+	task-estonian-kde-desktop,
+	task-finnish-kde-desktop,
+	task-french-kde-desktop,
+	task-galician-kde-desktop,
+	task-german-kde-desktop,
+	task-greek-kde-desktop,
+	task-gujarati-kde-desktop,
+	task-hebrew-kde-desktop,
+	task-hindi-kde-desktop,
+	task-hungarian-kde-desktop,
+	task-icelandic-kde-desktop,
+	task-indonesian-kde-desktop,
+	task-irish-kde-desktop,
+	task-italian-kde-desktop,
+	task-japanese-kde-desktop,
+	task-kannada-kde-desktop,
+	task-kazakh-kde-desktop,
+	task-khmer-kde-desktop,
+	task-korean-kde-desktop,
+	task-kurdish-kde-desktop,
+	task-latvian-kde-desktop,
+	task-lithuanian-kde-desktop,
+	task-macedonian-kde-desktop,
+	task-malayalam-kde-desktop,
+	task-nepali-kde-desktop,
+	task-norwegian-kde-desktop,
+	task-persian-kde-desktop,
+	task-polish-kde-desktop,
+	task-portuguese-kde-desktop,
+	task-punjabi-kde-desktop,
+	task-romanian-kde-desktop,
+	task-russian-kde-desktop,
+	task-serbian-kde-desktop,
+	task-sinhala-kde-desktop,
+	task-slovak-kde-desktop,
+	task-slovenian-kde-desktop,
+	task-spanish-kde-desktop,
+	task-swedish-kde-desktop,
+	task-telugu-kde-desktop,
+	task-thai-kde-desktop,
+	task-turkish-kde-desktop,
+	task-ukrainian-kde-desktop,
+	task-uyghur-kde-desktop,
+	task-vietnamese-kde-desktop,
+	task-xhosa-kde-desktop,
+	task-cyrillic-kde-desktop
+Description: Live environment support for kde
+ This metapackage installs packages and documentation to support the Debian
+ live kde environment.
+
+Package: live-gnome
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-base,
+ 	 live-recommended,
+	 live-extra,
+	 task-gnome-desktop
+Recommends:live-localisation,
+	live-localisation-desktop,
+	task-hebrew-gnome-desktop,
+	task-japanese-gnome-desktop,
+	task-korean-gnome-desktop,
+	task-malayalam-gnome-desktop,
+	task-tamil-gnome-desktop,
+	task-telugu-gnome-desktop,
+	task-thai-gnome-desktop
+Description: Live environment support for gnome
+ This metapackage installs packages and documentation to support the Debian
+ live gnome environment.
+
+Package: live-lxde
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-base,
+	 live-recommended,
+	 live-extra,
+	 task-lxde-desktop
+Recommends:live-localisation,
+	 live-localisation-desktop
+Description: Live environment support for lxde
+ This metapackage installs packages and documentation to support the Debian
+ live lxde environment.
+
+Package: live-xfce
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-base,
+	 live-recommended,
+	 live-extra,
+	 task-xfce-desktop
+Recommends:live-localisation,
+	 live-localisation-desktop
+Description: Live environment support for xfce
+ This metapackage installs packages and documentation to support the Debian
+ live xfce environment.
+
+Package: live-cinnamon
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-base,
+	 live-recommended,
+	 live-extra,
+	 task-cinnamon-desktop
+Recommends:live-localisation,
+	live-localisation-desktop
+Description: Live environment support for cinnamon.
+ This metapackage installs packages and documentation to support the Debian
+ live cinnamon environment.
+
+Package: live-mate
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         live-base,
+	 live-recommended,
+	 live-extra,
+	 task-mate-desktop
+Recommends:live-localisation,
+	 live-localisation-desktop
+Description: Live environment support for mate.
+ This metapackage installs packages and documentation to support the Debian
+ live mate environment.
+
+
+
+
