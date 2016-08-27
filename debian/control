@@ -1,6 +1,6 @@
 Source: live-tasks
-Maintainer: Ana Custura <ana@netstat.org.uk>
-Uploaders: Iain R. Learmonth <irl@debian.org>
+Maintainer: Live Systems Maintainers <debian-live@lists.debian.org>
+Uploaders: Ana Custura <ana@netstat.org.uk>
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 9)
@@ -8,26 +8,24 @@ Standards-Version: 3.9.8
 Vcs-Browser: http://anonscm.debian.org/cgit/vmdebootstrap/live-tasks.git
 Vcs-Git: http://anonscm.debian.org/git/vmdebootstrap/live-tasks.git
 
-Package: live-base
+Package: live-task-base
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: ${misc:Depends},
          live-boot,
          live-config,	 
 	 libnss-myhostname
-Recommends: live-recommended
-Suggests: live-extra	
+Recommends: live-task-recommended
+Suggests: live-task-extra	
 Description: Live environment support
- This metapackage installs packages and documentation to help support Debian
+ This metapackage installs base packages and documentation to help support Debian
  live environments.
 
-Package: live-recommended
+Package: live-task-recommended
 Architecture: all
 Depends: ${misc:Depends},
 	 task-laptop,
          task-english,
 Recommends: less,
-	 bash-auto-completion,
 	 dkms,
 	 time,
  	 firmware-linux-free,
@@ -39,31 +37,32 @@ Recommends: less,
 	 dbus,
 	 openssh-client,
 	 lsof,
-	 sed,
-	 doc-debian
+	 sed
 Description: Live environment support
  This metapackage installs packages and documentation to help support Debian
  live environments.
 
-Package: live-extra
+Package: live-task-extra
 Architecture: all
 Depends: ${misc:Depends},
 Recommends: man-db,
+	 reportbug,
+	 doc-debian,
+	 bash-auto-completion,
 	 dnsutils,
 	 whois,
 	 telnet,
 	 w3m,
-	 reportbug,
  	 debian-faq,
 	 screen,
  	 inetutils-ftp,
 	 vim,
 	 htop
 Description: Live environment support
- This metapackage installs packages and documentation to help support Debian
+ This metapackage installs recommended packages and documentation to help support Debian
  live environments.
 
-Package: live-localisation
+Package: live-task-localisation
 Architecture: all
 Depends: ${misc:Depends}
 Recommends:task-amharic,
@@ -127,15 +126,15 @@ Recommends:task-amharic,
 	 task-turkish,
 	 task-ukrainian,
 	 task-welsh,
-	 task-cyrillic,
+	 task-cyrillic
 Description: Live environment localisation support
  This metapackage installs packages and documentation to help support Debian
  live environments for other languages.
 
-Package: live-localisation-desktop
+Package: live-task-localisation-desktop
 Architecture: all
 Depends: ${misc:Depends},
-	live-localisation
+	live-task-localisation
 Recommends: task-albanian-desktop,
 	 task-amharic-desktop,
 	 task-arabic-desktop,
@@ -212,16 +211,13 @@ Description: Live graphical desktop environment localisation support
  This metapackage installs packages and documentation to help support Debian
  live graphical desktop environments for other languages.
 
-Package: live-kde
+Package: live-task-kde
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-	 live-base,
-	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+	 live-task-base,
 	 task-kde-desktop
-Recommends:live-localisation,
-	live-localisation-desktop,
+Recommends:live-task-localisation,
+	live-task-localisation-desktop,
 	task-amharic-kde-desktop,
 	task-arabic-kde-desktop, 
 	task-basque-kde-desktop,
@@ -290,16 +286,13 @@ Description: Live environment support for kde
  This metapackage installs packages and documentation to support the Debian
  live kde environment.
 
-Package: live-gnome
+Package: live-task-gnome
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         live-base,
- 	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+         live-task-base,
 	 task-gnome-desktop
-Recommends:live-localisation,
-	live-localisation-desktop,
+Recommends:live-task-localisation,
+	live-task-localisation-desktop,
 	task-hebrew-gnome-desktop,
 	task-japanese-gnome-desktop,
 	task-korean-gnome-desktop,
@@ -311,62 +304,46 @@ Description: Live environment support for gnome
  This metapackage installs packages and documentation to support the Debian
  live gnome environment.
 
-Package: live-lxde
+Package: live-task-lxde
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         live-base,
-	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+         live-task-base,
 	 task-lxde-desktop
-Recommends:live-localisation,
-	 live-localisation-desktop
+Recommends:live-task-localisation,
+	 live-task-localisation-desktop
 Description: Live environment support for lxde
  This metapackage installs packages and documentation to support the Debian
  live lxde environment.
 
-Package: live-xfce
+Package: live-task-xfce
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         live-base,
-	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+         live-task-base,
 	 task-xfce-desktop
-Recommends:live-localisation,
-	 live-localisation-desktop
+Recommends:live-task-localisation,
+	 live-task-localisation-desktop
 Description: Live environment support for xfce
  This metapackage installs packages and documentation to support the Debian
  live xfce environment.
 
-Package: live-cinnamon
+Package: live-task-cinnamon
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         live-base,
-	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+         live-task-base,
 	 task-cinnamon-desktop
-Recommends:live-localisation,
-	live-localisation-desktop
+Recommends:live-task-localisation,
+	live-task-localisation-desktop
 Description: Live environment support for cinnamon.
  This metapackage installs packages and documentation to support the Debian
  live cinnamon environment.
 
-Package: live-mate
+Package: live-task-mate
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         live-base,
-	 live-recommended,
-	 live-extra,
+Depends: ${misc:Depends},
+         live-task-base,
 	 task-mate-desktop
-Recommends:live-localisation,
-	 live-localisation-desktop
+Recommends:live-task-localisation,
+	 live-task-localisation-desktop
 Description: Live environment support for mate.
  This metapackage installs packages and documentation to support the Debian
  live mate environment.
-
-
-
-
