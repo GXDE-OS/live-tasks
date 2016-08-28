@@ -1,5 +1,5 @@
-live-tasks (0.1) UNRELEASED; urgency=medium
+live-tasks (0.1) unstable; urgency=medium
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release. (Closes: #835817)
 
- -- Ana Custura <ana@netstat.org.uk>  Sat, 27 Aug 2016 18:00:22 +0100
+ -- Ana Custura <ana@netstat.org.uk>  Sun, 28 Aug 2016 16:49:54 +0100
