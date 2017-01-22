@@ -55,7 +55,7 @@ Recommends: man-db,
  	 inetutils-ftp,
 	 vim,
 	 htop
-Description: Live extra`environment support
+Description: Live extra environment support
  This metapackage installs extra packages and documentation to help support
  Debian live environments.
 
@@ -322,6 +322,17 @@ Recommends: live-task-localisation,
 Description: Live environment support for Xfce
  This metapackage installs packages and documentation to support the Debian
  live Xfce environment.
+
+Package: live-task-lxqt
+Architecture: all
+Depends: ${misc:Depends},
+         live-task-base,
+	 task-lxqt-desktop
+Recommends: live-task-localisation,
+	 live-task-localisation-desktop
+Description: Live environment support for Lxqt
+ This metapackage installs packages and documentation to support the Debian
+ live Lxqt environment.
 
 Package: live-task-cinnamon
 Architecture: all
