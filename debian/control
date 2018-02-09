@@ -5,8 +5,8 @@ Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/vmdebootstrap/live-tasks.git
-Vcs-Git: https://anonscm.debian.org/git/vmdebootstrap/live-tasks.git
+Vcs-Browser: https://salsa.debian.org/live-team/live-tasks
+Vcs-Git: https://salsa.debian.org/live-team/live-tasks.git
 
 Package: live-task-base
 Architecture: all
