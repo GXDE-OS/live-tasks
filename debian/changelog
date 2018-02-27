@@ -1,3 +1,9 @@
+live-tasks (0.3) unstable; urgency=medium
+
+  * Inserts newline dropped in previous release (Closes: #890957) 
+
+ -- Ana Custura <ana@netstat.org.uk>  Tue, 27 Feb 2018 20:07:06 +0000
+
 live-tasks (0.2) unstable; urgency=medium
   
   [Alf Gaida <agaida@siduction.org>]
