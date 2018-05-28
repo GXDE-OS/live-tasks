@@ -1,11 +1,21 @@
+live-tasks (0.4) unstable; urgency=medium
+
+  * debian/control:
+   - Remove a bunch of trailing whitespaces
+   - Add calamares-settings-debian to live-task-recommended
+   - Add myself to uploaders
+   - Update standards version to 4.1.4
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 28 May 2018 19:27:28 +0200
+
 live-tasks (0.3) unstable; urgency=medium
 
-  * Inserts newline dropped in previous release (Closes: #890957) 
+  * Inserts newline dropped in previous release (Closes: #890957)
 
  -- Ana Custura <ana@netstat.org.uk>  Tue, 27 Feb 2018 20:07:06 +0000
 
 live-tasks (0.2) unstable; urgency=medium
-  
+
   [Alf Gaida <agaida@siduction.org>]
 
   * Adds support for the LXQt desktop environment (Closes: #883315)
