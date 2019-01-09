@@ -357,3 +357,45 @@ Recommends: live-task-localisation,
 Description: Live environment support for Mate
  This metapackage installs packages and documentation to support the Debian
  live Mate environment.
+
+Package: live-task-standard
+Architecture: all
+Depends: ${misc:Depends},
+	live-task-base,
+	apt-listchanges,
+	bash-completion,
+	bind9-host,
+	bzip2,
+	dbus,
+	debian-faq,
+	doc-debian,
+	file,
+	gettext-base,
+	groff-base,
+	hdparm,
+	krb5-locales,
+	libc-l10n,
+	liblockfile-bin,
+	libpam-systemd,
+	locales,
+	lsof,
+	man-db,
+	manpages,
+	mime-support,
+	ncurses-term,
+	netcat-traditional,
+	openssh-client,
+	pciutils,
+	perl,
+	python,
+	reportbug,
+	telnet,
+	traceroute,
+	ucf,
+	wamerican,
+	wget,
+	xz-utils
+Recommends: live-task-localisation
+Description: Live environment for standard system utilities
+ This metapackage sets up a basic user environment, providing a reasonably
+ small selection of services and tools usable on the command line.
