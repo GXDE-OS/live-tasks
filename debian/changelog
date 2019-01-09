@@ -1,3 +1,18 @@
+live-tasks (0.5) unstable; urgency=medium
+
+  * Accept MR#1
+    - Add metapackage live-task-standard
+      (Thanks Steven Monai)
+  * Move calamares-settings-debian to individual desktop metapackages
+    (Closes: #900576)
+  * Add plymouth to individual desktop metapackages
+  * Add haveged to live-task-recommended (may prevent current
+    lock-ups during boot during lack of entropy)
+  * Update debian/copyright
+  * Update standards version to 4.3.0
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 09 Jan 2019 09:44:29 +0200
+
 live-tasks (0.4) unstable; urgency=medium
 
   * debian/control:

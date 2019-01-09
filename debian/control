@@ -5,7 +5,7 @@ Uploaders: Ana Custura <ana@netstat.org.uk>,
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.4
+Standards-Version: 4.3.0
 Vcs-Browser: https://salsa.debian.org/live-team/live-tasks
 Vcs-Git: https://salsa.debian.org/live-team/live-tasks.git
 
@@ -27,8 +27,8 @@ Depends: ${misc:Depends},
 	 task-laptop,
          task-english,
 Recommends: less,
-         calamares-settings-debian,
 	 dkms,
+	 haveged,
 	 time,
 	 firmware-linux-free,
 	 inetutils-ping,
@@ -215,7 +215,8 @@ Architecture: all
 Depends: ${misc:Depends},
 	 live-task-base,
 	 task-kde-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+        live-task-localisation,
 	live-task-localisation-desktop,
 	task-amharic-kde-desktop,
 	task-arabic-kde-desktop,
@@ -290,7 +291,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-gnome-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+        plymouth,
+        live-task-localisation,
 	live-task-localisation-desktop,
 	task-hebrew-gnome-desktop,
 	task-japanese-gnome-desktop,
@@ -308,7 +311,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-lxde-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+         plymouth,
+         live-task-localisation,
 	 live-task-localisation-desktop
 Description: Live environment support for Lxde
  This metapackage installs packages and documentation to support the Debian
@@ -319,7 +324,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-xfce-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+         plymouth,
+         live-task-localisation,
 	 live-task-localisation-desktop
 Description: Live environment support for Xfce
  This metapackage installs packages and documentation to support the Debian
@@ -330,7 +337,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-lxqt-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+         plymouth,
+         live-task-localisation,
 	 live-task-localisation-desktop
 Description: Live environment support for LXQt
  This metapackage installs packages and documentation to support the Debian
@@ -341,7 +350,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-cinnamon-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+        plymouth,
+        live-task-localisation,
 	live-task-localisation-desktop
 Description: Live environment support for Cinnamon
  This metapackage installs packages and documentation to support the Debian
@@ -352,7 +363,9 @@ Architecture: all
 Depends: ${misc:Depends},
          live-task-base,
 	 task-mate-desktop
-Recommends: live-task-localisation,
+Recommends: calamares-settings-debian,
+         plymouth,
+         live-task-localisation,
 	 live-task-localisation-desktop
 Description: Live environment support for Mate
  This metapackage installs packages and documentation to support the Debian
