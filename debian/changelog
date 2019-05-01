@@ -1,3 +1,11 @@
+live-tasks (0.6) unstable; urgency=medium
+
+  * Replace inetutils-ping with iputils-ping (Closes: #924211)
+  * Make live-task-standard depend on libnss-systemd (Closes: #924214)
+  * Use new new logind virtual packages (Closes: #925331)
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 01 May 2019 15:52:16 +0200
+
 live-tasks (0.5) unstable; urgency=medium
 
   * Accept MR#1
