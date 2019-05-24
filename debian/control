@@ -125,7 +125,8 @@ Recommends: task-amharic,
 	 task-turkish,
 	 task-ukrainian,
 	 task-welsh,
-	 task-cyrillic
+	 task-cyrillic,
+         ibus-m17n
 Description: Live environment localisation support
  This metapackage installs packages and documentation to help support Debian
  live environments for other languages.

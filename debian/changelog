@@ -1,3 +1,10 @@
+live-tasks (0.7) unstable; urgency=medium
+
+  * Add ibus-m17n to live-task-localisation
+    (Closes: #866391)
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 16 May 2019 12:27:12 +0000
+
 live-tasks (0.6) unstable; urgency=medium
 
   * Replace inetutils-ping with iputils-ping (Closes: #924211)
