@@ -4,10 +4,11 @@ Uploaders: Ana Custura <ana@netstat.org.uk>,
            Jonathan Carter <jcc@debian.org>
 Section: metapackages
 Priority: optional
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.3.0
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.0
 Vcs-Browser: https://salsa.debian.org/live-team/live-tasks
 Vcs-Git: https://salsa.debian.org/live-team/live-tasks.git
+Rules-Requires-Root: no
 
 Package: live-task-base
 Architecture: all
@@ -56,6 +57,7 @@ Recommends: man-db,
 	 screen,
  	 inetutils-ftp,
 	 vim,
+	 hdparm,
 	 htop
 Description: Live extra environment support
  This metapackage installs extra packages and documentation to help support
@@ -386,7 +388,6 @@ Depends: ${misc:Depends},
 	file,
 	gettext-base,
 	groff-base,
-	hdparm,
 	krb5-locales,
 	libc-l10n,
 	liblockfile-bin,
@@ -402,14 +403,15 @@ Depends: ${misc:Depends},
 	openssh-client,
 	pciutils,
 	perl,
-	python,
+	python3,
 	reportbug,
 	telnet,
 	traceroute,
 	ucf,
 	wamerican,
 	wget,
-	xz-utils
+	xz-utils,
+	firmware-ath9k-htc
 Recommends: live-task-localisation
 Description: Live environment for standard system utilities
  This metapackage sets up a basic user environment, providing a reasonably
