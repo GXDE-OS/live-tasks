@@ -1,7 +1,6 @@
 Source: live-tasks
 Maintainer: Live Systems Maintainers <debian-live@lists.debian.org>
-Uploaders: Ana Custura <ana@netstat.org.uk>,
-           Jonathan Carter <jcc@debian.org>
+Uploaders: Jonathan Carter <jcc@debian.org>
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper-compat (= 12)
