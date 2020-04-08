@@ -4,7 +4,7 @@ Uploaders: Jonathan Carter <jcc@debian.org>
 Section: metapackages
 Priority: optional
 Build-Depends: debhelper-compat (= 12)
-Standards-Version: 4.4.0
+Standards-Version: 4.5.0
 Vcs-Browser: https://salsa.debian.org/live-team/live-tasks
 Vcs-Git: https://salsa.debian.org/live-team/live-tasks.git
 Rules-Requires-Root: no
@@ -29,7 +29,9 @@ Depends: ${misc:Depends},
 Recommends: less,
 	 dkms,
 	 haveged,
+	 hw-probe,
 	 time,
+	 firmware-ath9k-htc,
 	 firmware-linux-free,
 	 iputils-ping,
 	 netutils,
@@ -410,8 +412,7 @@ Depends: ${misc:Depends},
 	usbutils,
 	wamerican,
 	wget,
-	xz-utils,
-	firmware-ath9k-htc
+	xz-utils
 Recommends: live-task-localisation
 Description: Live environment for standard system utilities
  This metapackage sets up a basic user environment, providing a reasonably

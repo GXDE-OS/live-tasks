@@ -1,3 +1,18 @@
+live-tasks (11.0.2) unstable; urgency=medium
+
+  * Merge MR#2 on salsa.debian.org
+    - Add usbutils to live-task-standard (Closes: #955526)
+  * Add hw-probe to live-task-recomended (Closes: #944578)
+  * Move firmware-ath9k-htc from live-task-standard to
+    live-task-recommended (Closes: #942837)
+  * Remove iputils-ping and less from live-tas-recommended
+    (Closes: #942834)
+  * Update standards version to 4.5.0
+  * Ana Custure removed from uploaders in git (Closes: #955827)
+    - Thank you to Ana for her work on this package
+
+ -- Jonathan Carter <jcc@debian.org>  Wed, 08 Apr 2020 09:42:34 +0200
+
 live-tasks (11.0.1) unstable; urgency=medium
 
   * Update standards version to 4.4.0
