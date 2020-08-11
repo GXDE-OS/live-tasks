@@ -1,14 +1,32 @@
+live-tasks (11.0.3) unstable; urgency=medium
+
+  * Fix typos in previous changelog entry
+    (Closes: #956525)
+  * Remove recommendation on haveged, no longer needed
+    (Closes: #961728)
+  * Switch from netcat-traditional to netcat-bsd
+    (Closes: #965999)
+  * Actually remove iputils-ping from recommends
+    (see previous entry) (Closes: #942834)
+  * Add mdadm and lvm2 to recommends due to popular request
+    (often useful for troubleshooting and rescue purposes)
+  * Update copyright years
+  * Upgrade to debhelper-compat 13
+  * Add gnome-terminal to recommends for cinnamon desktop
+
+ -- Jonathan Carter <jcc@debian.org>  Tue, 11 Aug 2020 23:04:27 +0200
+
 live-tasks (11.0.2) unstable; urgency=medium
 
   * Merge MR#2 on salsa.debian.org
     - Add usbutils to live-task-standard (Closes: #955526)
-  * Add hw-probe to live-task-recomended (Closes: #944578)
+  * Add hw-probe to live-task-recommended (Closes: #944578)
   * Move firmware-ath9k-htc from live-task-standard to
     live-task-recommended (Closes: #942837)
   * Remove iputils-ping and less from live-tas-recommended
     (Closes: #942834)
   * Update standards version to 4.5.0
-  * Ana Custure removed from uploaders in git (Closes: #955827)
+  * Ana Custura removed from uploaders in git (Closes: #955827)
     - Thank you to Ana for her work on this package
 
  -- Jonathan Carter <jcc@debian.org>  Wed, 08 Apr 2020 09:42:34 +0200

@@ -3,7 +3,7 @@ Upstream-Name: live-tasks
 Source: https://salsa.debian.org/live-team/live-tasks
 
 Files: *
-Copyright: 2018-2019 Jonathan Carter <jcc@debian.org>
+Copyright: 2018-2020 Jonathan Carter <jcc@debian.org>
            2016-2017 Ana Custura <ana@nestat.org.uk>
 License: BSD-2-clause
 
