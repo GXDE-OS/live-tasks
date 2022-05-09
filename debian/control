@@ -21,7 +21,8 @@ Description: Live base environment support
 Package: live-task-recommended
 Architecture: all
 Depends: task-english, task-laptop, ${misc:Depends}
-Recommends: dbus,
+Recommends: cups,
+            dbus,
             dkms,
             file,
             firmware-ath9k-htc,
