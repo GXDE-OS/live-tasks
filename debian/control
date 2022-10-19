@@ -58,6 +58,7 @@ Recommends: bash-auto-completion,
             vim,
             w3m,
             whois
+Multi-Arch: foreign
 Description: Live extra environment support
  This metapackage installs extra packages and documentation to help support
  Debian live environments.
@@ -128,6 +129,7 @@ Recommends: ibus-m17n,
             task-turkish,
             task-ukrainian,
             task-welsh
+Multi-Arch: foreign
 Description: Live environment localisation support
  This metapackage installs packages and documentation to help support Debian
  live environments for other languages.
