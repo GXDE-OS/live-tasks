@@ -1,13 +1,16 @@
-live-tasks (12.0.2) UNRELEASED; urgency=medium
+live-tasks (12.0.2) unstable; urgency=medium
 
   * Add cups to recommends (Closes: #976438)
+  * Replace mime-support with media-types (Closes: #1010326)
+  * Add telnet-client as alternative dependency to telnet (Closes: #1016853)
+  * Update stanrdards version to 4.6.2
 
- -- Jonathan Carter <jcc@debian.org>  Mon, 09 May 2022 12:31:26 +0200
+ -- Jonathan Carter <jcc@debian.org>  Sat, 24 Dec 2022 00:13:09 +0200
 
 live-tasks (12.0.1) unstable; urgency=medium
 
   * Add psmisc to recommends
-  * Add xfsprogs (o recommends (Closes: #998719)
+  * Add xfsprogs to recommends (Closes: #998719)
   * Update standards version to 4.6.0
 
  -- Jonathan Carter <jcc@debian.org>  Mon, 09 May 2022 12:02:30 +0200
