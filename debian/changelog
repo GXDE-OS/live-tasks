@@ -1,3 +1,10 @@
+live-tasks (12.0.3) UNRELEASED; urgency=medium
+
+  [Stefan Kropp]
+  * Replace telnet and telnet-client with inetutils-telnet
+
+ -- Stefan Kropp <stefan.kropp@posteo.de>  Wed, 21 Jun 2023 18:08:28 +0200
+
 live-tasks (12.0.2) unstable; urgency=medium
 
   * Add cups to recommends (Closes: #976438)
