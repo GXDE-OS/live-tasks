@@ -1,9 +1,15 @@
-live-tasks (12.0.3) UNRELEASED; urgency=medium
+live-tasks (13.0.1) unstable; urgency=medium
 
   [Stefan Kropp]
   * Replace telnet and telnet-client with inetutils-telnet
 
- -- Stefan Kropp <stefan.kropp@posteo.de>  Wed, 21 Jun 2023 18:08:28 +0200
+  [Jonathan Carter]
+  * Apply hints suggested by multi-arch hinter
+    - Set Multi-Arch: foreign
+    - Applied via MR!5 from janitor bot
+  * Add live-task-debian-junior
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 23 Feb 2023 10:23:01 +0200
 
 live-tasks (12.0.2) unstable; urgency=medium
 

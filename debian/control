@@ -361,6 +361,11 @@ Description: Live environment support for Mate
  This metapackage installs packages and documentation to support the Debian
  live Mate environment.
 
+Package: live-task-debian-junior
+Architecture: all
+Depends: live-task-base, ${misc:Depends}
+Recommends: junior-desktop
+
 Package: live-task-standard
 Architecture: all
 Depends: apt-listchanges,
