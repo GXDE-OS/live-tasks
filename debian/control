@@ -365,6 +365,9 @@ Package: live-task-debian-junior
 Architecture: all
 Depends: live-task-base, ${misc:Depends}
 Recommends: junior-desktop
+Description: Live environment support for Debian junior 
+ This metapackage installs packages and documentation to support the Debian
+ Junior live environment.
 
 Package: live-task-standard
 Architecture: all
