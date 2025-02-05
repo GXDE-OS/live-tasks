@@ -31,12 +31,12 @@ Recommends: cups,
             less,
             lsof,
             lvm2,
-            xfsprogs,
             mdadm,
-            psmisc,
             netutils,
             openssh-client,
-            time
+            psmisc,
+            time,
+            xfsprogs
 Description: Live recommended environment support
  This metapackage installs recommended packages and documentation to help
  support Debian live environments.
@@ -342,9 +342,9 @@ Package: live-task-cinnamon
 Architecture: all
 Depends: live-task-base, task-cinnamon-desktop, ${misc:Depends}
 Recommends: calamares-settings-debian,
+            gnome-terminal,
             live-task-localisation,
             live-task-localisation-desktop,
-	    gnome-terminal,
             plymouth
 Description: Live environment support for Cinnamon
  This metapackage installs packages and documentation to support the Debian
