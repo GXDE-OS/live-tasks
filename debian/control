@@ -45,8 +45,8 @@ Package: live-task-extra
 Architecture: all
 Depends: ${misc:Depends}
 Recommends: bash-auto-completion,
+            bind9-dnsutils,
             debian-faq,
-            dnsutils,
             doc-debian,
             hdparm,
             htop,
