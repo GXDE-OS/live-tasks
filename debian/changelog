@@ -1,3 +1,12 @@
+live-tasks (13.0.3) unstable; urgency=medium
+
+  * Update standards version to 4.7.2
+  * Add extrepo to live-task-recommended
+  * Add systemsettings to conflicts for live-tasks-gnome package
+    (Closes: #1084814)
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 03 Apr 2025 22:02:18 +0200
+
 live-tasks (13.0.2) unstable; urgency=medium
 
   * Source upload to unstable 
