@@ -1,3 +1,12 @@
+live-tasks (13.0.4) unstable; urgency=medium
+
+  * Accept MR!8 from Roland Clobus
+    - https://salsa.debian.org/live-team/live-tasks/-/merge_requests/8
+      - Apply 'wrap-and-sort' 
+      - Switch to bind9-dnsutils (Closes: #1094950)
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 05 May 2025 16:37:49 +0200
+
 live-tasks (13.0.3) unstable; urgency=medium
 
   * Update standards version to 4.7.2
